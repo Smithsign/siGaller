@@ -23,13 +23,19 @@
         }
         
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
-            max-width: 900px;
+            max-width: 1000px;
+            width: 100%;
         }
         
+        .product-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .product-box {
             background-color: white;
             border: 3px solid #333;
@@ -63,7 +69,7 @@
         
         .title {
             color: white;
-            font-size: 24px;
+            font-size: 32px;
             margin-bottom: 30px;
             text-align: center;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -76,32 +82,28 @@
     <div class="container">
         <div class="product-item">
             <div class="product-box">
-    
                 <img src="watch.png" alt="Watch" class="product-image">
             </div>
             <div class="product-label">Orange Watch</div>
         </div>
         
-        <div class="container">
         <div class="product-item">
             <div class="product-box">
-    
-                <img src="watch.png" alt="tumbler" class="product-image">
+                <img src="tumbler.png" alt="Tumbler" class="product-image">
             </div>
             <div class="product-label">Tumbler</div>
         </div>
         
         <div class="product-item">
             <div class="product-box">
-             
-                <img src="tote.png" alt="sitote" class="product-image">
+                <img src="tote.png" alt="siTOTE" class="product-image">
             </div>
-
             <div class="product-label">siTOTE</div>
-               <div class="product-item">
+        </div>
+        
+        <div class="product-item">
             <div class="product-box">
-             
-                <img src="case.png" alt="CASE" class="product-image">
+                <img src="case.png" alt="siCASE" class="product-image">
             </div>
             <div class="product-label">siCASE</div>
         </div>
